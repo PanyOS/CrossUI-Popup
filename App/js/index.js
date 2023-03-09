@@ -37,14 +37,29 @@ xui.Class('App', 'xui.Module',{
             );
             
             append(
-                xui.create("xui.UI.ComboInput")
-                .setHost(host,"xui_ui_comboinput107")
-                .setLeft("30.476190476190474em")
+                xui.create("xui.UI.Input")
+                .setHost(host,"xui_ui_input21")
+                .setLeft("28.952380952380953em")
                 .setTop("6.857142857142857em")
                 .setWidth("18em")
                 .setLabelSize("8em")
                 .setLabelCaption("Hover Pop")
-                .setType("listbox")
+            );
+            
+            append(
+                xui.create("xui.UI.Panel")
+                .setHost(host,"xui_ui_panel11")
+                .setDock("none")
+                .setLeft("19.80952380952381em")
+                .setTop("11.428571428571429em")
+                .setWidth("10.742857142857142em")
+                .setHeight("15.314285714285715em")
+                .setCaption("Pop Window")
+            );
+            
+            append(
+                xui.create("xui.UI.List")
+                .setHost(host,"xui_ui_list3")
                 .setItems([
                     {
                         "id" : "a",
@@ -68,6 +83,11 @@ xui.Class('App', 'xui.Module',{
                         "disabled" : true
                     }
                 ])
+                .setLeft("28.952380952380953em")
+                .setTop("11.428571428571429em")
+                .setWidth("18.285714285714285em")
+                .setLabelSize("7.619047619047619em")
+                .setValue("a")
             );
             
             return children;
